@@ -71,6 +71,11 @@ input[type="submit"]{
     width: 0;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .event{
     border: solid 1px gray;
     padding: 10px;
@@ -179,5 +184,21 @@ input[type="submit"]{
         font-size: 0.9rem;
         width: 4rem;
         margin-right: 0.5rem;
+    }
+}
+
+@media screen and (min-width:700px){
+    .app__form{
+        width: 72%;
+    }
+    .app__form-title{
+        font-size: 2rem;
+    }
+    #eventsContainer{
+        width: 100rem;
+        height: 31rem;
+        margin: auto auto;
+        margin-right: 2rem;
+        margin-left: -2rem;
     }
 }
