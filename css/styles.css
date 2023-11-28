@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #6fae9e;
+    display: flex;
+    position: fixed;
+}
+
+.app__form{
+    background-color: beige;
+    padding: 3rem;
+    width: 30rem;
+    border-radius: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__form-title{
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+button{
+    border: none;
+    background-color: red;
+    padding: 0.5rem;
+    color:white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.app__form input{
+    margin: 5px 0;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#eventsContainer{
+    background-color: lightcyan;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50rem;
+    margin: 100px 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: scroll;
+    height: 34rem;
+}
+
+#eventsContainer::-webkit-scrollbar{
+    color: transparent transparent;
+    width: 0;
+}
+
+.event{
+    border: solid 1px gray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 0.1rem;
+}
+
+.event .days{
+    text-align: center;
+    width: 100px;
+}
+
+.event .days .days-number{
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.event .eventName{
+    padding:10px;
+    width:25rem;
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.event .eventDate{
+    width: 7rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-right: -1rem;
+}
+
+.event .actions{
+    padding: 10px;
+}
