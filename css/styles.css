@@ -102,7 +102,12 @@ form{
     width:25rem;
     background-color: lightgray;
     border-radius: 10px;
-    overflow-x: hidden;
+    overflow-x: scroll;
+}
+
+.eventName::-webkit-scrollbar{
+    color: transparent transparent;
+    width: 0;
 }
 
 .event .eventDate{
