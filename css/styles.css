@@ -8,7 +8,6 @@
 body{
     background-color: #6fae9e;
     display: flex;
-    position: fixed;
 }
 
 .app__form{
@@ -110,4 +109,75 @@ input[type="submit"]{
 
 .event .actions{
     padding: 10px;
+}
+
+@media screen and (max-width:400px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .app__form{
+        width: 62%;
+        height: 5%;
+        margin: 0.4rem 0rem;
+        margin-left: 7.7rem;
+    }
+    .app__form-title{
+        font-size: 3rem;
+    }
+    #eventsContainer{
+        margin: 0.2rem 0rem;
+        margin-left: 2.6rem;
+        width: 21rem;
+        height: 31rem;
+    }
+    .event{
+        width: 99.5%;
+    }
+    .event .eventName{
+        width: 7rem;
+        margin-right: 1rem;
+    }
+    .event .eventDate{
+        font-size: 0.9rem;
+        width: 4rem;
+        margin-right: 0.5rem;
+    }
+}
+@media screen and (min-width:400px) and  (max-width:500px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .app__form{
+        width: 77%;
+        height: 5%;
+        margin: 0;
+        margin: 0.4rem 0.8rem;
+        margin-left: 3.5rem;
+    }
+    .app__form-title{
+        font-size: 3rem;
+    }
+    #eventsContainer{
+        margin: 0.2rem 1rem;
+        width: 23.5rem;
+        height: 31rem;
+    }
+    .event{
+        width: 99.5%;
+    }
+    .event .eventName{
+        width: 7rem;
+        margin-right: 1rem;
+    }
+    .event .eventDate{
+        font-size: 0.9rem;
+        width: 4rem;
+        margin-right: 0.5rem;
+    }
 }
